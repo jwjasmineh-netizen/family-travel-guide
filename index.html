@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f4efe5">
+  <title>重庆 · 南昌｜家庭旅行手册</title>
+  <style>
+    :root{--bg:#f4efe5;--paper:#fffdf8;--ink:#1f2a25;--muted:#6e756f;--line:#ded8cc;--green:#1d6b57;--red:#b84b3e;--amber:#d28a2d;--blue:#3b6f91;--shadow:0 14px 34px rgba(62,50,35,.10)}
+    @media(prefers-color-scheme:dark){:root{--bg:#151918;--paper:#202624;--ink:#f4efe5;--muted:#abb4ae;--line:#39423e;--green:#65c5a8;--red:#f08376;--amber:#efb65e;--blue:#7db6d9;--shadow:0 14px 34px rgba(0,0,0,.28)}}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}a{color:inherit}.wrap{width:min(920px,100%);margin:auto;padding:20px 16px 76px}.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(31px,8vw,58px);line-height:1.06;margin:8px 0 12px;font-family:Georgia,"Songti SC",serif}h2{font-size:24px;margin:38px 0 16px}h3{font-size:18px;margin-bottom:8px}.sub{color:var(--muted);max-width:650px}.card{background:var(--paper);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow)}
+    .focus{padding:22px;position:relative;overflow:hidden}.focus:after{content:"";position:absolute;right:-35px;top:-50px;width:160px;height:160px;border:28px solid color-mix(in srgb,var(--amber) 25%,transparent);border-radius:50%}.focus-label{display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:14px}.focus h2{margin:9px 0 3px;font-size:24px}.countdown{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:18px;max-width:430px}.unit{padding:12px 10px;border-radius:16px;background:color-mix(in srgb,var(--amber) 12%,var(--paper));text-align:center}.unit b{font-size:30px;display:block;line-height:1}.unit span{font-size:12px;color:var(--muted)}
+    .map-card{padding:18px;overflow:hidden}.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;color:var(--muted);margin-bottom:12px}.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px}.overview{width:100%;height:auto;display:block}.map-note{font-size:12px;color:var(--muted);margin:10px 0 0}
+    .weather{padding:18px}.weather-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.weather-day{padding:14px;border:1px solid var(--line);border-radius:16px;background:color-mix(in srgb,var(--blue) 6%,var(--paper))}.weather-day strong,.weather-day span{display:block}.weather-day span{font-size:13px;color:var(--muted)}.weather-note{margin:12px 0 0;font-size:13px;color:var(--muted)}
+    .confirm-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.booking{padding:18px}.booking .tag,.badge{display:inline-flex;align-items:center;border-radius:999px;padding:3px 9px;font-size:12px;font-weight:700;background:color-mix(in srgb,var(--green) 14%,var(--paper));color:var(--green)}.booking h3{margin:10px 0 4px}.booking p{font-size:14px;margin:4px 0;color:var(--muted)}.booking strong{color:var(--ink)}.booking a{display:inline-block;margin-top:8px;color:var(--green);font-weight:700;text-decoration:none}.notice{margin-top:12px;padding:14px 16px;border-radius:16px;background:color-mix(in srgb,var(--red) 10%,var(--paper));border-left:4px solid var(--red);font-size:14px}
+    .day{margin-bottom:18px;overflow:hidden}.day-head{padding:19px 20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:15px;align-items:flex-start}.day-head h3{margin:0;font-size:21px}.day-head p{margin:2px 0 0;color:var(--muted);font-size:13px}.day-no{font-family:Georgia,serif;font-size:36px;line-height:1;color:var(--day)}.route-details{border-bottom:1px solid var(--line)}summary{cursor:pointer;padding:13px 20px;color:var(--day);font-weight:700;list-style:none}summary::-webkit-details-marker{display:none}summary:after{content:"＋";float:right}.route-details[open] summary:after{content:"－"}.mini-map{padding:0 20px 18px}.route-strip{display:flex;align-items:center;gap:5px;overflow:auto;padding:5px 0 12px}.stop{white-space:nowrap;border:1px solid var(--line);border-radius:999px;padding:5px 9px;font-size:12px}.arrow{color:var(--muted)}.route-actions{display:flex;gap:8px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;padding:9px 12px;border-radius:12px;background:var(--day);color:#fff;text-decoration:none;font-weight:700;font-size:13px}.btn.ghost{background:transparent;color:var(--day);border:1px solid var(--day)}.route-limit{font-size:12px;color:var(--muted);margin:10px 0 0}.timeline{padding:7px 20px 18px}.event{display:grid;grid-template-columns:68px 1fr;gap:13px;padding:14px 0;border-bottom:1px dashed var(--line)}.event:last-child{border-bottom:0}.time{font-weight:800;color:var(--day);font-variant-numeric:tabular-nums}.event h4{margin:0 0 4px;font-size:16px}.event p{margin:0;color:var(--muted);font-size:14px}.place{color:var(--green);font-weight:700;text-decoration:none;border-bottom:1px dotted currentColor}.badge.book{background:color-mix(in srgb,var(--red) 13%,var(--paper));color:var(--red);margin-left:5px}.badge.soft{background:color-mix(in srgb,var(--amber) 14%,var(--paper));color:var(--amber);margin-left:5px}
+    .todo,.tips{padding:18px 20px}.plain-list{list-style:none;margin:0;padding:0}.plain-list li{padding:12px 0 12px 24px;border-bottom:1px solid var(--line);position:relative}.plain-list li:last-child{border-bottom:0}.plain-list li:before{content:"—";position:absolute;left:0;color:var(--amber);font-weight:900}.plain-list small{display:block;color:var(--muted)}.tips-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.tip{padding:16px;border:1px solid var(--line);border-radius:16px}.tip h3{font-size:15px;margin-bottom:5px}.tip p{font-size:13px;color:var(--muted);margin:0}.pending{padding:20px;text-align:center;border-style:dashed}.pending strong{display:block;font-size:20px}.footer{margin-top:30px;text-align:center;font-size:12px;color:var(--muted)}
+    @media(max-width:650px){.confirm-grid,.tips-grid{grid-template-columns:1fr}.weather-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.wrap{padding-top:12px}.focus{padding:18px}.event{grid-template-columns:58px 1fr}.day-head{padding:16px}.timeline{padding-left:16px;padding-right:16px}.overview{min-width:620px}.map-scroll{overflow-x:auto}.countdown .unit b{font-size:26px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+<main class="wrap">
+  <div class="eyebrow">2026.10.15—10.18 · 3人家庭旅行</div>
+  <h1>山城慢慢走<br>重庆 → 南昌</h1>
+  <p class="sub">为一家三口准备的轻体力路线。重庆时间均为中国标准时间（Asia/Shanghai，UTC+8）；倒计时按绝对时间计算，在任何时区打开都不会错位。</p>
+
+  <section class="card focus" aria-labelledby="focus-title">
+    <div class="focus-label"><span>此刻关注</span><span id="focus-time">UTC+8</span></div>
+    <h2 id="focus-title">读取下一项行程…</h2>
+    <p id="focus-detail" class="sub">正在计算</p>
+    <div class="countdown" aria-live="polite">
+      <div class="unit"><b id="cd-day">–</b><span>天</span></div>
+      <div class="unit"><b id="cd-hour">–</b><span>时</span></div>
+      <div class="unit"><b id="cd-minute">–</b><span>分</span></div>
+    </div>
+  </section>
+
+  <h2>行程总览</h2>
+  <section class="card map-card">
+    <div class="legend"><span><i class="dot" style="background:#b84b3e"></i>10月15日</span><span><i class="dot" style="background:#3b6f91"></i>10月16日</span><span><i class="dot" style="background:#d28a2d"></i>10月17日</span></div>
+    <div class="map-scroll">
+      <svg class="overview" viewBox="0 0 760 360" role="img" aria-label="重庆三日手绘路线总览">
+        <defs><filter id="rough"><feTurbulence baseFrequency=".03" numOctaves="2" seed="9" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="1.6"/></filter></defs>
+        <path d="M38 242 C160 170,183 289,297 219 S480 88,714 122" fill="none" stroke="currentColor" opacity=".09" stroke-width="58" stroke-linecap="round"/>
+        <path d="M42 268 C194 186,285 308,420 226 S602 111,727 147" fill="none" stroke="#89a9b6" opacity=".35" stroke-width="22" stroke-linecap="round"/>
+        <g fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#rough)">
+          <path d="M610 236 C575 227,548 211,520 190" stroke="#b84b3e" stroke-width="7" stroke-dasharray="2 12"/>
+          <path d="M519 190 C479 179,451 172,430 173 C472 147,522 145,552 154 C579 159,602 151,620 139" stroke="#3b6f91" stroke-width="7" stroke-dasharray="2 12"/>
+          <path d="M519 190 C545 164,580 143,620 139 C588 172,559 201,519 190 M519 190 C571 227,641 244,690 274" stroke="#d28a2d" stroke-width="7" stroke-dasharray="2 12"/>
+        </g>
+        <g font-family="-apple-system,PingFang SC,sans-serif" font-size="13" fill="currentColor">
+          <g transform="translate(610 236)"><circle r="9" fill="#b84b3e"/><text x="14" y="5">江北机场</text></g>
+          <g transform="translate(520 190)"><circle r="10" fill="#1d6b57"/><text x="14" y="5" font-weight="700">解放碑酒店 · 2晚</text></g>
+          <g transform="translate(430 173)"><circle r="9" fill="#3b6f91"/><text x="-10" y="-14">李子坝</text></g>
+          <g transform="translate(552 154)"><circle r="9" fill="#3b6f91"/><text x="-18" y="-14">魁星楼</text></g>
+          <g transform="translate(620 139)"><circle r="9" fill="#3b6f91"/><text x="14" y="5">洪崖洞 / 两江游</text></g>
+          <g transform="translate(690 274)"><circle r="10" fill="#1d6b57"/><text x="-145" y="24" font-weight="700">机场诺富特 · 1晚</text></g>
+        </g>
+      </svg>
+    </div>
+    <p class="map-note">示意图强调每天的方向与住宿点，不按实际道路比例绘制。</p>
+  </section>
+
+  <h2>近期天气</h2>
+  <section class="card weather">
+    <div class="weather-grid">
+      <div class="weather-day"><strong>重庆 · 10月15日</strong><span>阴转小雨 · 20—24℃</span></div>
+      <div class="weather-day"><strong>重庆 · 10月16日</strong><span>小雨 · 20—24℃</span></div>
+      <div class="weather-day"><strong>重庆 · 10月17日</strong><span>小雨转中雨 · 20—23℃</span></div>
+      <div class="weather-day"><strong>南昌 · 10月18日</strong><span>多云 · 约21—32℃</span></div>
+    </div>
+    <p class="weather-note"><strong>10月13日预报快照：</strong>重庆三天都有降雨信号，防滑鞋和便携雨具要随身；游船甲板风更明显，给父母带薄外套。南昌预报分歧较大、整体偏暖，采用可增减的分层穿法。远期预报仍会变化，出发前24小时再复核。</p>
+  </section>
+
+  <h2>已确认</h2>
+  <section class="confirm-grid">
+    <article class="card booking"><span class="tag">已出票 · 航班</span><h3>衢州 → 重庆</h3><p><strong>10月15日 16:50—19:10</strong></p><p>G54684 · 衢州机场 → 重庆江北机场</p><a href="https://uri.amap.com/search?keyword=%E8%A1%A2%E5%B7%9E%E6%9C%BA%E5%9C%BA&city=%E8%A1%A2%E5%B7%9E&src=familytrip&callnative=1">高德地图 ↗</a></article>
+    <article class="card booking"><span class="tag">已确认 · 酒店</span><h3>重庆解放碑国贸中心亚朵酒店</h3><p><strong>10月15日—17日 · 2晚</strong></p><p>雅致大床房 · 早餐2份</p><p>订单显示：重庆市渝中区民生路96号（汇萃黄金旁）</p><p>电话：订单截图未显示</p><a href="https://uri.amap.com/search?keyword=%E9%87%8D%E5%BA%86%E8%A7%A3%E6%94%BE%E7%A2%91%E5%9B%BD%E8%B4%B8%E4%B8%AD%E5%BF%83%E4%BA%9A%E6%9C%B5%E9%85%92%E5%BA%97&city=%E9%87%8D%E5%BA%86&src=familytrip&callnative=1">导航到酒店 ↗</a></article>
+    <article class="card booking"><span class="tag">已确认 · 酒店</span><h3>重庆机场诺富特酒店</h3><p><strong>10月17日—18日 · 1晚</strong></p><p>高级房双床 · 早餐2份</p><p>渝北区两路街道机场东二路21号，T3A东南侧</p><p>电话：<a href="tel:02367157777">023-67157777</a></p><a href="https://uri.amap.com/search?keyword=%E9%87%8D%E5%BA%86%E6%9C%BA%E5%9C%BA%E8%AF%BA%E5%AF%8C%E7%89%B9%E9%85%92%E5%BA%97&city=%E9%87%8D%E5%BA%86&src=familytrip&callnative=1">导航到酒店 ↗</a></article>
+    <article class="card booking"><span class="tag">已出票 · 航班</span><h3>重庆 → 南昌</h3><p><strong>10月18日 06:35—08:20</strong></p><p>PN6255 · 重庆江北机场T3 → 南昌</p><a href="https://uri.amap.com/search?keyword=%E9%87%8D%E5%BA%86%E6%B1%9F%E5%8C%97%E5%9B%BD%E9%99%85%E6%9C%BA%E5%9C%BAT3&city=%E9%87%8D%E5%BA%86&src=familytrip&callnative=1">高德地图 ↗</a></article>
+    <article class="card booking"><span class="tag">已出票 · 高铁</span><h3>南昌西 → 衢州</h3><p><strong>10月18日 16:38—18:19</strong></p><p>G1356 · 3人</p><a href="https://uri.amap.com/search?keyword=%E5%8D%97%E6%98%8C%E8%A5%BF%E7%AB%99&city=%E5%8D%97%E6%98%8C&src=familytrip&callnative=1">导航到南昌西站 ↗</a></article>
+  </section>
+  <div class="notice"><strong>早餐提醒：</strong>两间酒店订单都只含2份早餐；3人同行需确认第3份。10月18日需约04:30离店，常规早餐大概率来不及，需向机场酒店询问打包餐。</div>
+
+  <h2>逐日行程</h2>
+  <article class="card day" style="--day:#b84b3e">
+    <header class="day-head"><div><h3>10月15日 · 初见山城</h3><p>抵达、简餐｜洪崖洞夜景看体力决定</p></div><div class="day-no">15</div></header>
+    <details class="route-details"><summary>展开当日路线</summary><div class="mini-map"><div class="route-strip"><span class="stop">江北机场</span><span class="arrow">→</span><span class="stop">解放碑酒店</span><span class="arrow">→</span><span class="stop">附近简餐</span><span class="arrow">→</span><span class="stop">洪崖洞（待定）</span></div><div class="route-actions"><a class="btn" href="https://uri.amap.com/marker?markers=106.641,29.719,%E6%B1%9F%E5%8C%97%E6%9C%BA%E5%9C%BA%7C106.574,29.558,%E8%A7%A3%E6%94%BE%E7%A2%91%E9%85%92%E5%BA%97%7C106.579,29.563,%E6%B4%AA%E5%B4%96%E6%B4%9E&src=familytrip&callnative=1">高德查看全天点位</a><a class="btn ghost" href="https://uri.amap.com/navigation?from=106.574,29.558,%E9%85%92%E5%BA%97&to=106.579,29.563,%E6%B4%AA%E5%B4%96%E6%B4%9E&mode=walk&src=familytrip&callnative=1">去洪崖洞（可选）</a></div></div></details>
+    <div class="timeline">
+      <div class="event"><div class="time">19:10</div><div><h4>抵达重庆江北机场</h4><p>按落地、取行李约40分钟估算；打车到酒店通常还需约40—60分钟，晚高峰留出余量。</p></div></div>
+      <div class="event"><div class="time">20:35</div><div><h4>酒店入住</h4><p>放下行李，不安排额外绕路。</p></div></div>
+      <div class="event"><div class="time">20:50</div><div><h4>晚餐 · 酒店附近简餐或外卖</h4><p>不吃火锅、不排队。优先酒店附近汤面、粥或小炒；想吃夜宵可点少量烧烤外卖送到酒店，控制辣度和分量，不为夜景赶时间。</p></div></div>
+      <div class="event"><div class="time">22:15</div><div><h4>洪崖洞夜景 <span class="badge soft">待定</span></h4><p>只有落地顺利、父母不累且雨势较小时才去；直接看千厮门大桥南端/戴家巷一带全景，不下到拥挤江边。若晚点、疲劳或雨大就取消，次日晚两江游通常仍能从江上看到洪崖洞。</p></div></div>
+      <div class="event"><div class="time">23:00</div><div><h4>回酒店休息</h4><p>不把夜景内部逛街硬塞进首晚；若取消洪崖洞，则晚餐后直接休息。</p></div></div>
+    </div>
+  </article>
+
+  <article class="card day" style="--day:#3b6f91">
+    <header class="day-head"><div><h3>10月16日 · 小红书同款山城线</h3><p>李子坝、魁星楼、戴家巷、洪崖洞｜川剧＋夜游</p></div><div class="day-no">16</div></header>
+    <details class="route-details"><summary>展开当日路线</summary><div class="mini-map"><div class="route-strip"><span class="stop">酒店</span><span class="arrow">→</span><span class="stop">李子坝</span><span class="arrow">→</span><span class="stop">魁星楼</span><span class="arrow">→</span><span class="stop">戴家巷</span><span class="arrow">→</span><span class="stop">洪崖洞</span><span class="arrow">→</span><span class="stop">枇杷山 / 三峡博物馆</span><span class="arrow">→</span><span class="stop">川剧茶馆</span><span class="arrow">→</span><span class="stop">两江游</span></div><div class="route-actions"><a class="btn" href="https://uri.amap.com/marker?markers=106.574,29.558,%E9%85%92%E5%BA%97%7C106.551,29.552,%E6%9D%8E%E5%AD%90%E5%9D%9D%E8%BD%BB%E8%BD%A8%E7%A9%BF%E6%A5%BC%E8%A7%82%E6%99%AF%E5%B9%B3%E5%8F%B0%7C106.579,29.563,%E9%AD%81%E6%98%9F%E6%A5%BC%7C106.579,29.565,%E6%88%B4%E5%AE%B6%E5%B7%B7%7C106.579,29.564,%E6%B4%AA%E5%B4%96%E6%B4%9E%7C106.551,29.56,%E6%9E%87%E6%9D%B7%E5%B1%B1%E5%85%AC%E5%9B%AD%7C106.55,29.564,%E4%B8%89%E5%B3%A1%E5%8D%9A%E7%89%A9%E9%A6%86%7C106.585,29.566,%E4%B8%A4%E6%B1%9F%E6%B8%B8%E7%A0%81%E5%A4%B4&src=familytrip&callnative=1">高德查看全天点位</a><a class="btn ghost" href="https://uri.amap.com/navigation?from=106.574,29.558,%E9%85%92%E5%BA%97&via=106.551,29.552,%E6%9D%8E%E5%AD%90%E5%9D%9D&to=106.579,29.563,%E9%AD%81%E6%98%9F%E6%A5%BC&mode=car&policy=1&src=familytrip&callnative=1">上午分段导航</a></div></div></details>
+    <div class="timeline">
+      <div class="event"><div class="time">08:15</div><div><h4>酒店出发</h4><p>早餐后打车去李子坝，避开稍晚的旅行团客流。</p></div></div>
+      <div class="event"><div class="time">08:45</div><div><h4><a class="place" href="https://uri.amap.com/search?keyword=%E6%9D%8E%E5%AD%90%E5%9D%9D%E8%BD%BB%E8%BD%A8%E7%A9%BF%E6%A5%BC%E8%A7%82%E6%99%AF%E5%B9%B3%E5%8F%B0&city=%E9%87%8D%E5%BA%86&src=familytrip&callnative=1">李子坝轻轨穿楼观景平台</a> <span class="badge soft">必去</span></h4><p>先在观景平台拍穿楼，再进李子坝站坐2号线一小段，从车厢第一节感受沿江与山城高差；父母可以坐着体验。</p></div></div>
+      <div class="event"><div class="time">09:50</div><div><h4><a class="place" href="https://uri.amap.com/search?keyword=%E9%AD%81%E6%98%9F%E6%A5%BC&city=%E9%87%8D%E5%BA%86&src=familytrip&callnative=1">魁星楼</a></h4><p>乘2号线到临江门站，B1出口附近进入。利用电梯体验“22楼出去也是地面”，不安排爬楼。</p></div></div>
+      <div class="event"><div class="time">10:40</div><div><h4><a class="place" href="https://uri.amap.com/search?keyword=%E6%88%B4%E5%AE%B6%E5%B7%B7&city=%E9%87%8D%E5%BA%86&src=familytrip&callnative=1">戴家巷</a> → 洪崖洞</h4><p>走平缓步道，从上层看吊脚楼和江景；保留体力，不下到最底层再爬回来。</p></div></div>
+      <div class="event"><div class="time">11:40</div><div><h4><a class="place" href="https://uri.amap.com/search?keyword=%E6%B4%AA%E5%B4%96%E6%B4%9E%E6%B0%91%E4%BF%97%E9%A3%8E%E8%B2%8C%E5%8C%BA&city=%E9%87%8D%E5%BA%86&src=familytrip&callnative=1">洪崖洞白天视角</a></h4><p>看吊脚楼建筑高差和江面，约30分钟即可；即使首晚夜景取消，这一段也保留。</p></div></div>
+      <div class="event"><div class="time">12:20</div><div><h4>午餐 · 重庆火锅</h4><p>首选 <a class="place" href="https://uri.amap.com/search?keyword=%E6%9D%A8%E6%98%A5%E9%9C%9E%E7%81%AB%E9%94%85%E8%A7%A3%E6%94%BE%E7%A2%91%E5%BA%97&city=%E9%87%8D%E5%BA%86&src=familytrip&callnative=1">杨春霞火锅（解放碑店）</a>；午市比深夜更适合父母。点鸳鸯锅、少油少辣，排队超过30分钟就换椒典九宫格或附近有座位的火锅店。</p></div></div>
+      <div class="event"><div class="time">13:40</div><div><h4>二选一：枇杷山公园 / 三峡博物馆</h4><p>天气好、体力一般：按小红书路线去<a class="place" href="https://uri.amap.com/search?keyword=%E6%9E%87%E6%9D%B7%E5%B1%B1%E5%85%AC%E5%9B%AD&city=%E9%87%8D%E5%BA%86&src=familytrip&callnative=1">枇杷山公园</a>短暂停留；如果时间充足且父母喜欢历史：改去<a class="place" href="https://uri.amap.com/search?keyword=%E9%87%8D%E5%BA%86%E4%B8%AD%E5%9B%BD%E4%B8%89%E5%B3%A1%E5%8D%9A%E7%89%A9%E9%A6%86&city=%E9%87%8D%E5%BA%86&src=familytrip&callnative=1">重庆中国三峡博物馆</a>，重点看“壮丽三峡”和重庆城市历史，最晚16:30离馆。</p></div></div>
+      <div class="event"><div class="time">15:30</div><div><h4>回酒店休息</h4><p>下午景点最晚15:00结束，给父母至少60—90分钟坐下休息。</p></div></div>
+      <div class="event"><div class="time">16:45</div><div><h4>解放碑附近川剧茶馆 <span class="badge book">待预订</span></h4><p>优先选择步行街附近每日驻场的短版川剧/非遗演出，约60分钟；当前备选为1941茶馆·戏院或百年重庆茶馆。10月场次发布后锁定16:30—17:00之间开演的一场。</p></div></div>
+      <div class="event"><div class="time">18:00</div><div><h4>简餐 · 重庆小面或豆花饭</h4><p>首选王胖娃面或九九豆花馆；控制用餐时间和辣度，18:50前结束。</p></div></div>
+      <div class="event"><div class="time">19:40</div><div><h4>两江游船 <span class="badge book">需提前订票</span></h4><p>经典两江游线路通常会经过洪崖洞水域，可以从江上看亮灯后的吊脚楼全景，因此首晚陆上夜景取消也不算错过。购票时必须确认“航线经过洪崖洞/可看洪崖洞夜景”，并以出票码头、开船时间和当天临时航线为准；至少提前40分钟抵达。</p></div></div>
+    </div>
+  </article>
+
+  <article class="card day" style="--day:#d28a2d">
+    <header class="day-head"><div><h3>10月17日 · 索道与半岛慢游</h3><p>长江索道必去、十八梯｜傍晚前抵达机场酒店</p></div><div class="day-no">17</div></header>
+    <details class="route-details"><summary>展开当日路线</summary><div class="mini-map"><div class="route-strip"><span class="stop">酒店</span><span class="arrow">→</span><span class="stop">长江索道北站</span><span class="arrow">→</span><span class="stop">索道南站</span><span class="arrow">→</span><span class="stop">十八梯</span><span class="arrow">→</span><span class="stop">酒店取行李</span><span class="arrow">→</span><span class="stop">机场酒店</span></div><div class="route-actions"><a class="btn" href="https://uri.amap.com/marker?markers=106.574,29.558,%E9%85%92%E5%BA%97%7C106.583,29.557,%E9%95%BF%E6%B1%9F%E7%B4%A2%E9%81%93%E5%8C%97%E7%AB%99%7C106.594,29.547,%E9%95%BF%E6%B1%9F%E7%B4%A2%E9%81%93%E5%8D%97%E7%AB%99%7C106.568,29.552,%E5%8D%81%E5%85%AB%E6%A2%AF%7C106.653,29.714,%E6%9C%BA%E5%9C%BA%E9%85%92%E5%BA%97&src=familytrip&callnative=1">高德查看全天点位</a><a class="btn ghost" href="https://uri.amap.com/navigation?from=106.574,29.558,%E9%85%92%E5%BA%97&to=106.583,29.557,%E9%95%BF%E6%B1%9F%E7%B4%A2%E9%81%93%E5%8C%97%E7%AB%99&mode=walk&src=familytrip&callnative=1">步行去索道北站</a></div></div></details>
+    <div class="timeline">
+      <div class="event"><div class="time">07:35</div><div><h4>退房并寄存行李</h4><p>早餐后尽早出发，不要先送机场酒店再折返；市区游览结束后回取行李。</p></div></div>
+      <div class="event"><div class="time">08:00</div><div><h4><a class="place" href="https://uri.amap.com/search?keyword=%E9%95%BF%E6%B1%9F%E7%B4%A2%E9%81%93%E5%8C%97%E7%AB%99&city=%E9%87%8D%E5%BA%86&src=familytrip&callnative=1">长江索道北站</a> <span class="badge book">必去 · 提前购票</span></h4><p>选择最早时段，从渝中北站单程到南岸，减少排队；官方夏季运营08:00—22:00。到南站后打车返回，不再排一次返程索道。</p></div></div>
+      <div class="event"><div class="time">09:30</div><div><h4>回到解放碑附近休息</h4><p>索道实际乘坐时间很短，但周六排队不可控，因此上午只锁定这一项。</p></div></div>
+      <div class="event"><div class="time">10:30</div><div><h4><a class="place" href="https://uri.amap.com/search?keyword=%E5%8D%81%E5%85%AB%E6%A2%AF%E4%BC%A0%E7%BB%9F%E9%A3%8E%E8%B2%8C%E5%8C%BA&city=%E9%87%8D%E5%BA%86&src=familytrip&callnative=1">十八梯</a></h4><p>从高处进入、选择电梯和缓坡，不强求走完整段石梯。</p></div></div>
+      <div class="event"><div class="time">12:00</div><div><h4>午餐 · 烧烤/小炒</h4><p>可选九村烤脑花或光头小炒，与前两天的火锅、川菜和面食错开；提前确认可坐席位。</p></div></div>
+      <div class="event"><div class="time">13:30</div><div><h4>回酒店附近休息 / 博物馆补位</h4><p>如果前一天没有去三峡博物馆且父母状态很好，最多参观到15:00；否则直接喝茶休息。</p></div></div>
+      <div class="event"><div class="time">16:30</div><div><h4>回酒店取行李</h4><p>取完行李后留在主城区吃晚饭，不再加入需要排队或大量步行的景点。</p></div></div>
+      <div class="event"><div class="time">17:30</div><div><h4>晚餐 · 主城区 <span class="badge soft">餐厅待定</span></h4><p>在解放碑或酒店附近吃好再走，优先有座位、出餐稳定的家常川菜或汤锅；与前两天的火锅、面食和烧烤错开，18:45左右结束。</p></div></div>
+      <div class="event"><div class="time">19:00</div><div><h4>前往机场诺富特酒店</h4><p>周六晚预留70—90分钟路程，预计20:10—20:30入住。到酒店后直接洗漱休息，为次日04:30离店保留约7小时睡眠。</p></div></div>
+    </div>
+  </article>
+
+  <article class="card day" style="--day:#1d6b57">
+    <header class="day-head"><div><h3>10月18日 · 半日南昌</h3><p>拌粉、滕王阁、老城街巷、八一记忆｜南昌西返程</p></div><div class="day-no">18</div></header>
+    <details class="route-details"><summary>展开当日路线</summary><div class="mini-map"><div class="route-strip"><span class="stop">昌北机场</span><span class="arrow">→</span><span class="stop">八一广场寄存</span><span class="arrow">→</span><span class="stop">大士院</span><span class="arrow">→</span><span class="stop">滕王阁</span><span class="arrow">→</span><span class="stop">万寿宫 / 珠宝街</span><span class="arrow">→</span><span class="stop">八一馆</span><span class="arrow">→</span><span class="stop">八一广场取行李</span><span class="arrow">→</span><span class="stop">南昌西站</span></div><div class="route-actions"><a class="btn" href="https://uri.amap.com/marker?markers=115.901,28.864,%E5%8D%97%E6%98%8C%E6%98%8C%E5%8C%97%E5%9B%BD%E9%99%85%E6%9C%BA%E5%9C%BA%7C115.904,28.676,%E5%85%AB%E4%B8%80%E5%B9%BF%E5%9C%BA%7C115.889,28.689,%E5%A4%A7%E5%A3%AB%E9%99%A2%7C115.881,28.681,%E6%BB%95%E7%8E%8B%E9%98%81%7C115.887,28.672,%E4%B8%87%E5%AF%BF%E5%AE%AB%7C115.889,28.672,%E5%85%AB%E4%B8%80%E8%B5%B7%E4%B9%89%E7%BA%AA%E5%BF%B5%E9%A6%86%7C115.792,28.623,%E5%8D%97%E6%98%8C%E8%A5%BF%E7%AB%99&src=familytrip&callnative=1">高德查看全天点位</a><a class="btn ghost" href="https://uri.amap.com/navigation?from=115.904,28.676,%E5%85%AB%E4%B8%80%E5%B9%BF%E5%9C%BA&via=115.889,28.689,%E5%A4%A7%E5%A3%AB%E9%99%A2&to=115.881,28.681,%E6%BB%95%E7%8E%8B%E9%98%81&mode=car&policy=1&src=familytrip&callnative=1">上午分段导航</a></div></div></details>
+    <div class="timeline">
+      <div class="event"><div class="time">08:20</div><div><h4>抵达南昌昌北机场</h4><p>按取行李约35—40分钟估算。不要先绕去南昌西站；从机场直接打车到八一广场更顺路。</p></div></div>
+      <div class="event"><div class="time">09:20</div><div><h4><a class="place" href="https://uri.amap.com/search?keyword=%E5%85%AB%E4%B8%80%E5%B9%BF%E5%9C%BA%E5%9C%B0%E9%93%81%E7%AB%99&city=%E5%8D%97%E6%98%8C&src=familytrip&callnative=1">八一广场地铁站寄存行李</a> <span class="badge soft">免费</span></h4><p>优先使用站内“阳光寄存”服务；3件行李需预留找柜和登记时间。若八一广场满位，备选八一馆站寄存点。</p></div></div>
+      <div class="event"><div class="time">09:45</div><div><h4><a class="place" href="https://uri.amap.com/search?keyword=%E5%A4%A7%E5%A3%AB%E9%99%A2%E7%BE%8E%E9%A3%9F%E8%A1%97&city=%E5%8D%97%E6%98%8C&src=familytrip&callnative=1">大士院早餐</a></h4><p>拌粉＋瓦罐汤，首选小罗子汤店等仍在营业且有座位的老店；部分早市小店10点左右就可能售罄，不排长队。</p></div></div>
+      <div class="event"><div class="time">10:25</div><div><h4><a class="place" href="https://uri.amap.com/search?keyword=%E6%BB%95%E7%8E%8B%E9%98%81%E6%97%85%E6%B8%B8%E5%8C%BA&city=%E5%8D%97%E6%98%8C&src=familytrip&callnative=1">滕王阁外观</a></h4><p>不购票、不进主阁，只在免费外围拍建筑和江景，控制在20—25分钟。</p></div></div>
+      <div class="event"><div class="time">11:00</div><div><h4><a class="place" href="https://uri.amap.com/search?keyword=%E4%B8%87%E5%AF%BF%E5%AE%AB%E5%8E%86%E5%8F%B2%E6%96%87%E5%8C%96%E8%A1%97%E5%8C%BA&city=%E5%8D%97%E6%98%8C&src=familytrip&callnative=1">万寿宫</a>与<a class="place" href="https://uri.amap.com/search?keyword=%E7%8F%A0%E5%AE%9D%E8%A1%97&city=%E5%8D%97%E6%98%8C&src=familytrip&callnative=1">珠宝街</a></h4><p>慢走约50分钟，以街区建筑和小吃氛围为主，不重复吃一整顿。</p></div></div>
+      <div class="event"><div class="time">12:00</div><div><h4>午餐 · 江西鲜辣小炒</h4><p>按排队情况四选一，13:00前离店：首选 <a class="place" href="https://uri.amap.com/search?keyword=%E6%89%93%E5%B9%B3%E4%BC%99%E9%B2%9C%E8%BE%A3%E5%B0%8F%E7%82%92%E4%B8%87%E5%AF%BF%E5%AE%AB%E5%BA%97&city=%E5%8D%97%E6%98%8C&src=familytrip&callnative=1">打平伙·鲜辣小炒（万寿宫店）</a>；备选 <a class="place" href="https://uri.amap.com/search?keyword=%E5%88%98%E5%A4%A7%E5%8E%A8%E5%BC%80%E5%91%B3%E9%A6%86&city=%E5%8D%97%E6%98%8C&src=familytrip&callnative=1">刘大厨开味馆</a>、<a class="place" href="https://uri.amap.com/search?keyword=%E7%93%B7%E7%BD%90%E9%87%8C%E5%9C%B0%E9%81%93%E5%8D%97%E6%98%8C%E5%91%B3%E8%9B%A4%E8%9F%86%E8%A1%97%E8%80%81%E5%BA%97&city=%E5%8D%97%E6%98%8C&src=familytrip&callnative=1">瓷罐里·地道南昌味</a>、<a class="place" href="https://uri.amap.com/search?keyword=%E5%9B%9E%E5%AE%B6%E5%90%83%E9%A5%AD%E4%B9%A1%E9%87%8E%E6%B1%9F%E8%A5%BF%E8%8F%9C&city=%E5%8D%97%E6%98%8C&src=familytrip&callnative=1">回家吃饭·乡野江西菜</a>。3人只点2—3个小份，避免早餐已有炒粉后再点炒粉。</p></div></div>
+      <div class="event"><div class="time">13:10</div><div><h4><a class="place" href="https://uri.amap.com/search?keyword=%E5%8D%97%E6%98%8C%E5%85%AB%E4%B8%80%E8%B5%B7%E4%B9%89%E7%BA%AA%E5%BF%B5%E9%A6%86&city=%E5%8D%97%E6%98%8C&src=familytrip&callnative=1">南昌八一起义纪念馆</a></h4><p>控制在45分钟；若当天排队过长，为保证返程直接改为只看旧址外观。</p></div></div>
+      <div class="event"><div class="time">14:10</div><div><h4>八一广场，取行李</h4><p>地铁1号线从八一馆站到八一广场站，简单看广场后取行李；最晚15:00进入2号线。</p></div></div>
+      <div class="event"><div class="time">15:00</div><div><h4>前往南昌西站</h4><p>地铁2号线直达，预计15:40左右到站，给安检、找检票口和父母休息留约50分钟。</p></div></div>
+      <div class="event"><div class="time">16:38</div><div><h4>G1356 南昌西 → 衢州 <span class="badge soft">已出票</span></h4><p>18:19抵达衢州。建议15:40前到站，给父母留出安检、找检票口和休息时间。</p></div></div>
+    </div>
+  </article>
+
+  <h2>待办清单</h2>
+  <section class="card todo"><ul class="plain-list">
+    <li>确认两家酒店第3份早餐政策与价格。<small>机场酒店同时询问能否在04:30提供打包早餐。</small></li>
+    <li>向解放碑酒店核对完整地址与前台电话。<small>订单截图地址与公开平台结果存在差异，以酒店确认短信为准。</small></li>
+    <li>关注10月川剧演出排期并购买3张票。<small>优先官方微信公众号/正规票务平台；场次通常临近演出月才发布。</small></li>
+    <li>购买10月17日08:00长江索道单程票。<small>选择渝中区新华路北站出发；只通过官方微信公众号、现场、携程或同程购买。</small></li>
+    <li>购买10月16日晚两江游船票。<small>先确定川剧场次，再选至少间隔90分钟的游船；确认码头、航程，并向售票方核实“经过洪崖洞水域、可看洪崖洞夜景”。</small></li>
+    <li>出发前3天复核长江索道运营公告。<small>索道会因月度维护或天气临时停运，咨询电话023-68816888。</small></li>
+    <li>出发前24小时复核重庆与南昌天气。<small>重点看10月16日晚游船是否受雨势、能见度或航道管制影响。</small></li>
+    <li>出发前确认八一广场地铁站寄存点仍可接收3件行李。<small>主方案八一广场站，备选八一馆站；贵重物品和证件随身携带。</small></li>
+  </ul></section>
+
+  <h2>实用贴士</h2>
+  <section class="card tips"><div class="tips-grid">
+    <div class="tip"><h3>父母体力优先</h3><p>重庆的“短距离”常伴随高差。路线按“能坐车不硬爬、下午留休息”设计，舒适鞋比打卡数量重要。</p></div>
+    <div class="tip"><h3>三峡博物馆</h3><p>免费开放，9:00—17:00、周一闭馆，目前凭有效身份证件免预约入馆；遇客流预警时以现场安排为准。</p></div>
+    <div class="tip"><h3>游船与洪崖洞</h3><p>重庆官方介绍的经典两江游观景线路包含洪崖洞；但水位、天气与航道管制可能临时改变线路，购票和登船时都要再确认。</p></div>
+    <div class="tip"><h3>打车与拥堵</h3><p>洪崖洞、解放碑周末晚间常堵。叫车点尽量设在主路或商场门口，不在洪崖洞入口原地等车。</p></div>
+    <div class="tip"><h3>天气与穿着</h3><p>当前预报显示重庆15—17日连续有雨，20—24℃上下；南昌18日偏暖。带防滑鞋、便携雨具和薄外套，采用方便增减的分层穿法。</p></div>
+    <div class="tip"><h3>紧急与咨询</h3><p>报警110、急救120、交通运输监督12328；机场诺富特023-67157777，长江索道023-68816888。</p></div>
+  </div></section>
+
+  <p class="footer">公开页面不含确认号、证件号或房间号。最后更新时间：2026年10月13日 · 所有行程时间均为 UTC+8。</p>
+</main>
+<script>
+  const events=[
+    {at:'2026-10-15T16:50:00+08:00',title:'G54684 起飞：衢州 → 重庆',detail:'建议最晚 15:20 抵达衢州机场'},
+    {at:'2026-10-15T19:10:00+08:00',title:'抵达重庆江北机场',detail:'取行李后前往解放碑酒店'},
+    {at:'2026-10-15T20:50:00+08:00',title:'酒店附近简餐或外卖',detail:'洪崖洞夜景按体力和雨势决定，不必赶时间'},
+    {at:'2026-10-16T08:15:00+08:00',title:'小红书同款山城线出发',detail:'李子坝 · 魁星楼 · 戴家巷 · 洪崖洞'},
+    {at:'2026-10-16T16:45:00+08:00',title:'解放碑附近川剧茶馆',detail:'场次发布后更新为实际开演时间'},
+    {at:'2026-10-16T19:40:00+08:00',title:'两江游船（时间待出票确认）',detail:'至少提前40分钟到正确码头'},
+    {at:'2026-10-17T07:35:00+08:00',title:'退房寄存行李，前往长江索道',detail:'08:00北站单程过江'},
+    {at:'2026-10-17T19:00:00+08:00',title:'主城区晚餐后前往机场酒店',detail:'预计20:10—20:30入住，随后直接休息'},
+    {at:'2026-10-18T04:30:00+08:00',title:'退房前往 T3',detail:'确认酒店接驳或步行路线'},
+    {at:'2026-10-18T06:35:00+08:00',title:'PN6255 起飞：重庆 → 南昌',detail:'预计 08:20 抵达南昌'},
+    {at:'2026-10-18T16:38:00+08:00',title:'G1356 南昌西 → 衢州',detail:'计划 18:19 抵达；以出票信息为准'}
+  ].map(x=>({...x,date:new Date(x.at)}));
+  function updateFocus(){
+    const now=new Date(); let next=events.find(x=>x.date>now);
+    if(!next){document.getElementById('focus-title').textContent='本次旅行已结束';document.getElementById('focus-detail').textContent='一路辛苦，平安到家';['day','hour','minute'].forEach(k=>document.getElementById('cd-'+k).textContent='0');return}
+    const diff=Math.max(0,next.date-now),mins=Math.floor(diff/60000),days=Math.floor(mins/1440),hours=Math.floor((mins%1440)/60),minutes=mins%60;
+    document.getElementById('focus-title').textContent=next.title;document.getElementById('focus-detail').textContent=next.detail;document.getElementById('focus-time').textContent=new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit',hour12:false}).format(next.date)+' UTC+8';
+    document.getElementById('cd-day').textContent=days;document.getElementById('cd-hour').textContent=hours;document.getElementById('cd-minute').textContent=minutes;
+  }
+  updateFocus();setInterval(updateFocus,60000);
+</script>
+</body>
+</html>
